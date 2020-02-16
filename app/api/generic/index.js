@@ -19,7 +19,12 @@ var routerController = require('./controller');
  *  Route Expression
  */
 
-router.get("/find-all", parse, validate(page), control(routerController.get));
+router.get(
+	"/generic", 
+	parse, 
+	validate(page), 
+	control(routerController.get)
+);
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  *  Module Declaration
