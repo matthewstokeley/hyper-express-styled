@@ -14,12 +14,18 @@ var parse = require("body-parser").json();
 var validate = require('express-joi-validator');
 var page = require('./model');
 var routerController = require('./controller');
+var view = require('/view');
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  *  Route Expression
  */
 
-router.get("/find-all", parse, validate(page), control(routerController.get));
+router.get(
+	"/generic", 
+	parse, 
+	validate(page), 
+	control(routerController.get)
+);
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  *  Module Declaration

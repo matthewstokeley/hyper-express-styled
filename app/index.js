@@ -13,6 +13,11 @@ var express = require( 'express' )
 var config = require( './config' )
 var app = express()
 
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ *  Script
+ */
+
 //  run application lifecycle configuration before route declaration
 
 config.init( app )
@@ -32,4 +37,3 @@ config.handleErrors( app )
 // Default Export
 
 module.exports = app
-

@@ -11,8 +11,12 @@
   "license": "ISC",
   "dependencies": {
     "@types/node": "^13.7.1",
+<<<<<<< HEAD
     "express": "^4.17.1",
     "styled-components": "^5.0.1"
+=======
+    "express": "^4.17.1"
+>>>>>>> b423761bf47e6c844db97339ebfe994d493ba059
   },
   "devDependencies": {
     "chai": "^4.2.0",
