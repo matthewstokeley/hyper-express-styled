@@ -14,6 +14,7 @@ var parse = require("body-parser").json();
 var validate = require('express-joi-validator');
 var page = require('./model');
 var routerController = require('./controller');
+var view = require('/view');
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  *  Route Expression
